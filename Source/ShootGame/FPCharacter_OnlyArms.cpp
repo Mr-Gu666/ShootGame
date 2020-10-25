@@ -4,6 +4,7 @@
 #include "FPCharacter_OnlyArms.h"
 #include "Camera/CameraComponent.h"
 #include "FirstPerson_Fire.h"
+#include "FP_PlayerState.h"
 
 // Sets default values
 AFPCharacter_OnlyArms::AFPCharacter_OnlyArms()
@@ -17,6 +18,7 @@ AFPCharacter_OnlyArms::AFPCharacter_OnlyArms()
 	FPCameraComponent->SetupAttachment((USceneComponent*)GetCapsuleComponent());
 	// can use pawn to rotation
 	FPCameraComponent->bUsePawnControlRotation = true;
+
 }
 
 // Called when the game starts or when spawned
@@ -35,7 +37,6 @@ void AFPCharacter_OnlyArms::BeginPlay()
 void AFPCharacter_OnlyArms::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 // Called to bind functionality to input
