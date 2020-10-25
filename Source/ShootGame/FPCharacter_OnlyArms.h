@@ -60,4 +60,5 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, Category = "WhatToShoot")
 		TSubclassOf<class AFirstPerson_Fire> WhatToShoot;
+
 };
