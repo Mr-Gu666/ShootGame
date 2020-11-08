@@ -52,7 +52,7 @@ public:
 	UFUNCTION()
 		void StopAim();
 
-	UFUNCTION()
+	UFUNCTION(BlueprintCallable, Category = "FP_Fire")
 		void Fire();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "WhereToShoot")
